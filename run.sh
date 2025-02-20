@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=6 python train_longrank_soft_sort.py \
+    --model_name_or_path checkpoints/pcl-bert-base-uncased \
+    --train_file data/rankingsentences_n:32.csv \
+    --output_dir checkpoints/longgen-soft_sort-pcl-bert-base-uncased-lr:3e-6-es:25-dw:0.5 \
+    --num_train_epochs 1 \
+    --per_device_train_batch_size 1 \
+    --learning_rate 3e-6 \
+    --max_seq_length 32 \
+    --evaluation_strategy steps \
+    --metric_for_best_model avg_sts \
+    --load_best_model_at_end \
+    --eval_steps 25 \
+    --pooler_type cls \
+    --mlp_only_train \
+    --overwrite_output_dir \
+    --omega 0.5 \
+    --do_train \
+    --do_eval \
+    --fp16 \
+    --teacher_name_or_path /data/lyhe/data/diffcse-bert-base-uncased-sts
