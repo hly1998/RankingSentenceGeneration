@@ -2,6 +2,8 @@
 
 This is the code implementation for the paper *Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models*, encompassing data synthesis, model execution, and model validation.
 
+The paper is now avaliable at: https://arxiv.org/pdf/2502.13656
+
 The environments differ across various stages. For details on the data synthesis phase, please refer to *./generation/README.md*.  
 
 Below, we introduce the environment configuration for the post-training phase. In this stage, we draw upon the implementations of **SimCSE** and **RankCSE**, utilizing a largely identical environment setup.
@@ -98,15 +100,45 @@ Modify the *evaluation_mteb.py* file to update the model names in **model_name_l
 
 ## Dataset
 
+We provide our generated ranked sentence data for further research. At the same time, we offer synthetic data based on the MultiCSR-provided methodology.
 
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/leoner24)
 
-https://huggingface.co/datasets/leoner24/RankingSentences-NLI-LLaMA3-8B-32
+* RankingSentences-NLI-LLaMA3-8B-32: https://huggingface.co/datasets/leoner24/RankingSentences-NLI-LLaMA3-8B-32
+* MultiCSR_NLI:
 
 ## Pretrained models
 
+We provide our model trained based on MultiCSR and SynCSE, which has achieved state-of-the-art results. Additionally, we offer the checkpoints obtained using MultiCSR and SynCSE.
+
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow)](https://huggingface.co/leoner24)
-* [leoner24/MultiCSR-r-BERT-base](https://huggingface.co/leoner24/MultiCSR-r-BERT-base): 
-* [leoner24/MultiCSR-r-BERT-large](https://huggingface.co/leoner24/MultiCSR-r-BERT-large): 
-* [leoner24/MultiCSR-r-RoBERTa-base](https://huggingface.co/leoner24/MultiCSR-r-RoBERTa-base): 
+
+Our post-training models:
+
+* [leoner24/MultiCSR-r-BERT-base](https://huggingface.co/leoner24/MultiCSR-r-BERT-base)
+* [leoner24/MultiCSR-r-BERT-large](https://huggingface.co/leoner24/MultiCSR-r-BERT-large)
+* [leoner24/MultiCSR-r-RoBERTa-base](https://huggingface.co/leoner24/MultiCSR-r-RoBERTa-base)
 * [leoner24/SynCSE-r-RoBERTa-large](https://huggingface.co/leoner24/SynCSE-r-RoBERTa-large)
+
+MultiCSR (unofficial):
+* [leoner24/multicse-bert-base-uncased](https://huggingface.co/leoner24/multicse-bert-base-uncased)
+* [leoner24/multicse-bert-large-uncased](https://huggingface.co/leoner24/multicse-bert-large-uncased)
+* [leoner24/multicse-roberta-base](https://huggingface.co/leoner24/multicse-roberta-base)
+* [leoner24/multicse-roberta-large](https://huggingface.co/leoner24/multicse-roberta-large)
+
+SynCSE (unofficial):
+* [leoner24/syncse-bert-base-uncased](https://huggingface.co/leoner24/syncse-bert-base-uncased)
+* [leoner24/syncse-bert-large-uncased](https://huggingface.co/leoner24/syncse-bert-large-uncased)
+
+## Citations
+
+Please cite our paper if you use it:
+
+```bibtex
+@article{he2025refining,
+  title={Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models},
+  author={He, Liyang and Liu, Chenglong and Li, Rui and Huang, Zhenya and Ruan, Shulan and Zhou, Jun and Chen, Enhong},
+  journal={arXiv preprint arXiv:2502.13656},
+  year={2025}
+}
+```
