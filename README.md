@@ -43,10 +43,10 @@ bash download_dataset.sh
 ## Post-Training
 (The same as `run.sh`.)
 ```bash
-CUDA_VISIBLE_DEVICES=6 python train_longrank_soft_sort.py \
-    --model_name_or_path checkpoints/pcl-bert-base-uncased \
-    --train_file data/rankingsentences_n:32.csv \
-    --output_dir checkpoints/longgen-soft_sort-pcl-bert-base-uncased-lr:3e-6-es:25-dw:0.5 \
+CUDA_VISIBLE_DEVICES=6 python train.py \
+    --model_name_or_path checkpoints/syn-bert-base-uncased \
+    --train_file /data/rankingsentences_n:32.csv \
+    --output_dir checkpoints/syn-bert-base-uncased-r-lr:3e-6-es:25-dw:0.5 \
     --num_train_epochs 1 \
     --per_device_train_batch_size 1 \
     --learning_rate 3e-6 \
