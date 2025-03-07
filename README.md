@@ -104,8 +104,8 @@ We provide our generated ranked sentence data for further research. At the same 
 
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow)](https://huggingface.co/leoner24)
 
-* RankingSentences-NLI-LLaMA3-8B-32: https://huggingface.co/datasets/leoner24/RankingSentences-NLI-LLaMA3-8B-32
-* MultiCSR_NLI:
+* [leoner24/RankingSentences-NLI-LLaMA3-8B-32](https://huggingface.co/datasets/leoner24/RankingSentences-NLI-LLaMA3-8B-32)
+* [leoner24/MultiCSR_NLI](https://huggingface.co/datasets/leoner24/MultiCSR_NLI) 
 
 ## Pretrained models
 
