@@ -1,12 +1,10 @@
 # Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models
 
-This is the code implementation for the paper *Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models*, encompassing data synthesis, model execution, and model validation.
-
-The paper is now avaliable at: https://arxiv.org/pdf/2502.13656
+This is the Python implementation for the paper *Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models* (Accepted as a Finding of ACL25), the paper is now avaliable at: https://arxiv.org/pdf/2502.13656
 
 The environments differ across various stages. For details on the data synthesis phase, please refer to *./generation/README.md*.  
 
-Below, we introduce the environment configuration for the post-training phase. In this stage, we draw upon the implementations of **SimCSE** and **RankCSE**, utilizing a largely identical environment setup.
+We introduce the environment configuration for the post-training phase in the following. In this stage, we refer to the implementations of **SimCSE** and **RankCSE**, utilizing a largely identical environment setup.
 
 ### Requirements
 
